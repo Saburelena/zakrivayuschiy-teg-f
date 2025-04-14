@@ -9,3 +9,122 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes like {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.25;
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: fill var(--transition-duration, 0.3s) ease 0.03s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) ease 0.03s;
+  -moz-transition: fill var(--transition-duration, 0.3s) ease 0.03s;
+  -ms-transition: fill var(--transition-duration, 0.3s) ease 0.03s;
+  -o-transition: fill var(--transition-duration, 0.3s) ease 0.03s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill var(--transition-duration, 0.3s) ease 0s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) ease 0s;
+  -moz-transition: fill var(--transition-duration, 0.3s) ease 0s;
+  -ms-transition: fill var(--transition-duration, 0.3s) ease 0s;
+  -o-transition: fill var(--transition-duration, 0.3s) ease 0s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--color-heart-contour, #000000);
+  transition: fill var(--transition-duration, 0.3s) ease;
+  cursor: pointer;
+  -webkit-transition: fill var(--transition-duration, 0.3s) ease;
+  -moz-transition: fill var(--transition-duration, 0.3s) ease;
+  -ms-transition: fill var(--transition-duration, 0.3s) ease;
+  -o-transition: fill var(--transition-duration, 0.3s) ease;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--color-heart-contour, #000000);
+  transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -moz-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -ms-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -o-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--color-heart-sparks, #FF0000);
+  transition: fill var(--transition-duration, 0.3s) ease;
+  -webkit-transition: fill var(--transition-duration, 0.3s) ease;
+  -moz-transition: fill var(--transition-duration, 0.3s) ease;
+  -ms-transition: fill var(--transition-duration, 0.3s) ease;
+  -o-transition: fill var(--transition-duration, 0.3s) ease;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--color-heart-sparks, #FF0000);
+  transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -moz-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -ms-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+  -o-transition: fill var(--transition-duration, 0.3s) ease 0.05s;
+}
+
+.card__icon-button .is-liked .core {
+  fill: var(--color-heart-sparks, #FF0000);
+  transition: fill var(--transition-duration, 0.3s) linear 0s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) linear 0s;
+  -moz-transition: fill var(--transition-duration, 0.3s) linear 0s;
+  -ms-transition: fill var(--transition-duration, 0.3s) linear 0s;
+  -o-transition: fill var(--transition-duration, 0.3s) linear 0s;
+}
+
+.card__icon-button .is-liked .main-body {
+  fill: var(--color-heart-sparks, #FF0000);
+  transition: fill var(--transition-duration, 0.3s) linear 0.05s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) linear 0.05s;
+  -moz-transition: fill var(--transition-duration, 0.3s) linear 0.05s;
+  -ms-transition: fill var(--transition-duration, 0.3s) linear 0.05s;
+  -o-transition: fill var(--transition-duration, 0.3s) linear 0.05s;
+}
+
+.card__icon-button .is-liked .contour {
+  fill: var(--color-heart-sparks, #FF0000);
+  transition: fill var(--transition-duration, 0.3s) linear 0.06s;
+  -webkit-transition: fill var(--transition-duration, 0.3s) linear 0.06s;
+  -moz-transition: fill var(--transition-duration, 0.3s) linear 0.06s;
+  -ms-transition: fill var(--transition-duration, 0.3s) linear 0.06s;
+  -o-transition: fill var(--transition-duration, 0.3s) linear 0.06s;
+}
+
+.card__icon-button .is-liked {
+  animation: like  var(--transition-duration, 0.3s) ease-in 0.1s 1;
+  transform-origin: center;
+  -webkit-animation: like  var(--transition-duration, 0.3s) ease-in 0.1s 1;
+}
+
+.card__icon-button .is-liked .sparks {
+  animation: sparks var(--transition-duration, 0.3s) ease-in var(--transition-duration, 0.3s) 1;
+  -webkit-animation: sparks var(--transition-duration, 0.3s) ease-in var(--transition-duration, 0.3s) 1;
+}
+
+.card__icon-button:focus-visible {
+  outline-color: #000000;
+  transition: outline-color var(--transition-duration, 0.3s) linear;
+  -webkit-transition: outline-color var(--transition-duration, 0.3s) linear;
+  -moz-transition: outline-color var(--transition-duration, 0.3s) linear;
+  -ms-transition: outline-color var(--transition-duration, 0.3s) linear;
+  -o-transition: outline-color var(--transition-duration, 0.3s) linear;
+}

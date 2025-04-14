@@ -1,1 +1,22 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --width-page: clamp(18.75rem, 100%, 43.5rem);
+  --font-family-article: 'Inter-Variable';
+  --font-family-accent: 'PressStart2P';
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-size-header-title: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
+  --font-size-header-subtitle: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
+  --font-size-base: 18px;
+  --font-size-image-overlay-text: 14px;
+  --font-size-button: 14px;
+  --color-border-outline: 2px solid #000000;
+  --color-shadow: #FFFFFF;
+  --color-heart-contour: #000000;
+  --color-heart-sparks: #FF0000;
+  --transition-duration: 0.3s;
+  --background-image: 
+  repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+}
