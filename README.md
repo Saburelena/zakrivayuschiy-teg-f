@@ -1,1 +1,3 @@
-В этой папке будут храниться все необходимые SVG-файлы для сайта.
+https://github.com/Saburelena/zakrivayuschiy-teg-f.git
+
+https://saburelena.github.io/zakrivayuschiy-teg-f/
