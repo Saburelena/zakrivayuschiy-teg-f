@@ -13,7 +13,7 @@
   font-family: var(--font-family-article, 'Arial', sans-serif);
   font-variation-settings: "wght" var(--font-weight-normal, 400);
   font-size: var(--font-size-base, 18px);
-  background: var(--background-image) center/cover fixed #FFFFFF;
+  background: var(--background-image) center/cover #FFFFFF;
   margin: auto;
   display: flex;
   flex-direction: column;
