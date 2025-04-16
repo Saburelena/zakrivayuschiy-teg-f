@@ -286,11 +286,11 @@ li .article {
 
 .cta-button:focus {
   outline: none;
-  box-shadow: 2px 2px 0 1px #000000;
 }
 
 .cta-button:focus-visible {
   border: var(--color-border-outline, 2px solid #000000);
+  box-shadow: 2px 2px 0 1px #000000;
 }
 
 .save-button {
@@ -328,6 +328,12 @@ body:has(.dialog-floppy[open]) {
   align-items: center;
   gap: 20px;
   padding-block: 0px 30px;
+
+  /* @media (width <= 375px) { */
+  /* gap: 30px;
+  padding-block: 0px 30px;
+  padding-inline: 42px; */
+  /* } */
 }
 
 .dialog-button {
