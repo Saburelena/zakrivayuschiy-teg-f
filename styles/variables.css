@@ -10,11 +10,13 @@
   --font-size-base: 18px;
   --font-size-image-overlay-text: 14px;
   --font-size-button: 14px;
+  --color: #000000;
   --color-border-outline: 2px solid #000000;
   --color-shadow: #FFFFFF;
   --color-heart-contour: #000000;
   --color-heart-sparks: #FF0000;
   --transition-duration: 0.3s;
+  --background-color: #FFFFFF;
   --background-image: 
   repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
   repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 

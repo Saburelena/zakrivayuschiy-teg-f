@@ -13,7 +13,9 @@
   font-family: var(--font-family-article, 'Arial', sans-serif);
   font-variation-settings: "wght" var(--font-weight-normal, 400);
   font-size: var(--font-size-base, 18px);
-  background: var(--background-image) center/cover fixed #FFFFFF;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -30,7 +32,7 @@
 }
 
 .header {
-  background-color: inherit;
+  background-color: var(--background-color);
   outline: var(--color-border-outline, 2px solid #000000);
   font-family: var(--font-family-accent, 'Courier New', fantasy);
   font-weight: var(--font-weight-normal, 400);
@@ -83,7 +85,7 @@ li .article {
   padding-inline: 10px 25px;
   font-variation-settings: "wght" var(--font-weight-bold, 700);
   color: var(--font-color, #000000);
-  background-color: inherit;
+  background-color: var(--background-color);
   font-size: var(--font-size-base, 18px);
 
   @media (width <= 375px) {
@@ -177,7 +179,7 @@ li .article {
 .article-image-caption {
   padding-block: 26px 24px;
   padding-inline: 25px;
-  background-color: inherit;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   
@@ -219,11 +221,8 @@ li .article {
   transition: border 0.3s ease;
   align-self: center;
   padding-inline: 0;
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  -ms-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
 }
+
 
 .save-button-floppy-svg {
   width: 24px;
@@ -275,7 +274,7 @@ li .article {
   content: "";
   position: absolute;
   inset: 0;
-  background: #000000;
+  background: var(--color);
   transition: translate 0.5s ease-in-out;
   translate: -100%;
 }
@@ -328,12 +327,6 @@ body:has(.dialog-floppy[open]) {
   align-items: center;
   gap: 20px;
   padding-block: 0px 30px;
-
-  /* @media (width <= 375px) { */
-  /* gap: 30px;
-  padding-block: 0px 30px;
-  padding-inline: 42px; */
-  /* } */
 }
 
 .dialog-button {
